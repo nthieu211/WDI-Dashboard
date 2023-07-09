@@ -19,6 +19,17 @@
       rel="stylesheet"
     />
 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    <!-- swiper -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/css/swiper.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/js/swiper.min.js"></script>
+
   </head>
   <body>
     <header class="world">
@@ -37,47 +48,8 @@
               <span class="purple">Overall</span><br />World GDP
             </h1>
             <!-- DASHBOARD HERE-->
-            <div
-              class="tableauPlaceholder"
-              id="viz1688630601148"
-              style="position: relative"
-            >
-              <noscript>
-                <a href="#">
-                  <img
-                    alt="Dashboard BTC "
-                    src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BT&#47;BTC-Historical-Prices&#47;DashboardBTC&#47;1_rss.png"
-                    style="border: none" /></a></noscript
-                  >
-                  <object class="tableauViz" style="display: none">
-                <param
-                  name="host_url"
-                  value="https%3A%2F%2Fpublic.tableau.com%2F"
-                />
-                <param name="embed_code_version" value="3" />
-                <param name="site_root" value="" />
-                <param
-                  name="name"
-                  value="BTC-Historical-Prices&#47;DashboardBTC"
-                />
-                <param name="tabs" value="no" />
-                <param name="toolbar" value="yes" />
-                <param
-                  name="static_image"
-                  value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BT&#47;BTC-Historical-Prices&#47;DashboardBTC&#47;1.png"
-                />
-                <param name="animate_transition" value="yes" />
-                <param name="display_static_image" value="yes" />
-                <param name="display_spinner" value="yes" />
-                <param name="display_overlay" value="yes" />
-                <param name="display_count" value="yes" />
-                <param name="language" value="en-US" />
-                <param
-                  name="filter"
-                  value="fbclid=IwAR0ugB4PWXgvp1J9Qpj9NY8kZqjcFCVQJ8CT_EJcbiB_07mExTZzwdw3Vkw_aem_th_Acc_djB8R_NhChQoaWmz_GfBJNMon7ym7gAlwdS_RDSJuSb7kiWTgsFu2Bzepo1d5Tg"
-                />
-              </object>
-            </div>
+            <div id="population-statistic"></div>
+            </script>
           </div>
         </div>
       </div>
@@ -98,7 +70,7 @@
         <div class="row">
           <div class="col-md-12">
             <!-- Swiper -->
-            <div class="swiper-container indicator-swiper">
+            <div class="swiper-container indicator-swiper" style="padding: 4em 1em !important;">
               <div class="swiper-wrapper">
                 <div class="swiper-slide indicator-box yellow">
                   <h1>Inflation</h1>
@@ -293,65 +265,12 @@
       </div>
     </footer>
 
-    <!-- Javascript -->
-    <script src="js/jquery-2.1.1.js"></script>
-    <script src="js/swiper.jquery.min.js"></script>
-    <!-- Initialize Client Swiper -->
-    <script>
-      // Initialize indicator Swiper
-      const swiper = new Swiper(".indicator-swiper", {
-        slidesPerView: 3,
-        pagination: ".swiper-pagination",
-        paginationClickable: true,
-        spaceBetween: 30,
-        grabCursor: true,
-        freeMode: true,
-        breakpoints: {
-          // when window width is <= 320px
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          },
-          // when window width is <= 480px
-          480: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          },
-          // when window width is <= 640px
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          },
-        },
-      });
-    </script>
+    <!-- custom swiper style -->
+    <script src="js/swiper-custom.js"></script>
 
-    <!-- Javascript for dashboard-->
-    <script type="text/javascript">
-      const divElement = document.getElementById("viz1688630601148");
-      const vizElement = divElement.getElementsByTagName("object")[0];
-      if (divElement.offsetWidth > 800) {
-        vizElement.style.minWidth = "1589px";
-        vizElement.style.maxWidth = "1689px";
-        vizElement.style.width = "100%";
-        vizElement.style.minHeight = "1032px";
-        vizElement.style.maxHeight = "1132px";
-        vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
-      } else if (divElement.offsetWidth > 500) {
-        vizElement.style.minWidth = "1589px";
-        vizElement.style.maxWidth = "1689px";
-        vizElement.style.width = "100%";
-        vizElement.style.minHeight = "1032px";
-        vizElement.style.maxHeight = "1132px";
-        vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
-      } else {
-        vizElement.style.width = "100%";
-        vizElement.style.height = "2477px";
-      }
-      const scriptElement = document.createElement("script");
-      scriptElement.src =
-        "https://public.tableau.com/javascripts/api/viz_v1.js";
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);
-    </script>
+    <!-- Load dashboard -->
+    <script src="js/load-dashboards.js"></script>
+
   </body>
 </html>
+

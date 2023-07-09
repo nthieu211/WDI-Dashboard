@@ -32,7 +32,7 @@ a:hover, a:focus, a:active {
 
 /* world Section */
 header.world {
-  background: url(../assets/world.svg) no-repeat center center fixed;
+  background: url(../assets/images/world.svg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -150,7 +150,7 @@ h1.heading.pink:after {
 
 /* Detail */
 .detail {
-  background: url(../assets/vietnam.svg) #B2DDEF center center no-repeat fixed;
+  background: url(../assets/images/vietnam.svg) #B2DDEF center center no-repeat fixed;
   background-size: auto 100vh;
   color: #fff;
   padding: 3em;

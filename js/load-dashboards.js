@@ -1,0 +1,1 @@
+$("#population-statistic").load("./assets/dashboards/population-statistic.html");
