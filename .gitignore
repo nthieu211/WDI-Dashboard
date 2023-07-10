@@ -1,3 +1,4 @@
 .DS_Store
 *.twbr
-js/disable-scrollbar.js
+TableauFiles/
+.gitignore
