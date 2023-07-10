@@ -2,6 +2,7 @@
 $("#world-gdp").load("./assets/dashboards/world-gdp.html");
 
 // detail elements
+$("#gdp-vietnam-overview").load("./assets/dashboards/gdp-vietnam-overview.html");
 $("#population-statistic").load("./assets/dashboards/population-statistic.html");
-$("#diff-in-labor").load("./assets/dashboards/diff-in-labor.html");
-$("#line-gdp").load("./assets/dashboards/line-gdp.html");
+$("#labor-force").load("./assets/dashboards/labor-force.html");
+$("#indexes").load("./assets/dashboards/indexes.html");

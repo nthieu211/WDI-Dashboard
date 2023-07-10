@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>World Development Indicators</title>
+    <title>Vietnam Development Indicators</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -34,7 +34,7 @@
     <header class="world">
       <div class="container">
         <div class="world-text">
-          <h1><span>World Development</span><br />indicators</h1>
+          <h1><span id="target"></span><span id="cursor"></span><span>&nbsp;Development</span><br />indicators</h1>
         </div>
       </div>
     </header>
@@ -131,48 +131,21 @@
         <div class="row" style="margin: 15px !important;">
           <div class="col-lg-4 order-2 order-lg-1 order-md-2 order-sm-2">
             <div class="indicator-box">
-              <h1>Indicator name</h1>
+              <h1>Vietnam GDP Overview</h1>
               <p>
-                Comments or story
+                + Vietnam's GDP from 1996 to 2021 grew relatively evenly and there was no decrease in any year. </br>
+                + From 1996 to 1997, there was a very high GDP growth rate, the average threshold was about 8.7%. </br>
+                + From 1998 to 2019, Vietnam had a stable GDP growth rate of nearly 6%/year. In particular, in the 
+                period 2016 - 2019 GDP grew at an average rate of 7%/year </br>
+                + Although 2020 and 2021 are heavily affected by the Covid-19 epidemic, Vietnam's economy still grows 
+                by an average of 2.7%. </br>
               </p>
             </div>
           </div>
           <div class="col-lg-8 order-1 order-lg-2 order-md-1 order-sm-1">
             <div class="indicator-box">
-              <h1>CHART</h1>
+              <div id="gdp-vietnam-overview"></div>
             </div>
-          </div>
-        </div>
-
-        <div class="row" style="margin: 15px !important;">
-          <div class="col-lg-8">
-            <div class="indicator-box">
-              <div id="diff-in-labor"></div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="indicator-box">
-              <h1>Indicator name</h1>
-              <p>
-                Comments or story
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row" style="margin: 15px !important;">
-          <div class="col-lg-4 order-lg-1 order-md-2 order-sm-2">
-            <div class="indicator-box">
-              <h1>Indicator name</h1>
-              <p>
-                Comments or story
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-8 order-lg-2 order-md-1 order-sm-1">
-            <div class="indicator-box">
-              <div id="line-gdp"></div>
-            </div>  
           </div>
         </div>
 
@@ -180,17 +153,84 @@
           <div class="col-lg-8">
             <div class="indicator-box">
               <div id="population-statistic"></div>
-            </div>  
+            </div>
           </div>
           <div class="col-lg-4">
             <div class="indicator-box">
-              <h1>Indicator name</h1>
+              <h1>Census</h1>
               <p>
-                Comments or story
+                + The population proportion of Vietnam's age group 0-14 has been gradually decreasing from 1996 to 
+                2021 due to the implementation of family planning policies aimed at restraining population growth.  </br>
+                + The population proportion of Vietnam's age group 15-64 has been gradually increasing from 1996 onwards until it stabilizes without significant growth, and even experiences a slight decline after 2008.  </br>
+                + The population proportion of Vietnam's age group 65 and above has been gradually increasing from 
+                1996 to 2021 due to economic development and improvements in education.  </br>
               </p>
             </div>
           </div>
         </div>
+
+        <div class="row" style="margin: 15px !important;">
+          <div class="col-lg-4 order-2 order-lg-1 order-md-2 order-sm-2">
+            <div class="indicator-box">
+              <h1>Population, Labor Force, Unemployment</h1>
+              <p>
+                + Vietnam's population grows very steadily, from 75 million people in 1996 to 97.5 million people in 
+                2021. </br>
+                + Vietnam's population tends to be younger, as evidenced by the large proportion of the population of working age, over 50% of the total population and the tendency to increase gradually from 1996 to 
+                2019. </br>
+                + The increase in population, the proportion of the population in the working age, has steadily increased 
+                the GDP per capita as well as the total GDP of Vietnam.             </br>  
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-8 order-1 order-lg-2 order-md-1 order-sm-1">
+            <div class="indicator-box">
+              <div id="labor-force"></div>
+            </div>  
+          </div>
+        </div>
+
+        <div class="row" style="margin: 15px !important;">
+          <div class="col-lg-8">
+            <div class="indicator-box">
+              <div id="indexes"></div>
+            </div>  
+          </div>
+          <div class="col-lg-4">
+            <div class="indicator-box">
+              <h1>Indexes</h1>
+              <p>
+                + Foreign direct investment (FDI) accounts for a small portion (&lt;10%) of the total investment. Generally, throughout the years, the amount of FDI has remained low and has not exceeded 10% of the total GDP. </br>
+                + The gross capital formation contributes approximately one-third of the country's total GDP. It reached its peak at 39.6% in 2007 and remained stable until 2010. Afterward, it slightly decreased but remained 
+                stable until 2021. </br>
+                + Trade: The trend in trade has been unstable, with sudden increases and decreases. It reached its peak in 2007 when Vietnam joined the World Trade Organization (WTO), and it hit a low point in 2010 due to 
+                the global financial crisis, which affected the global economy as a whole. </br>
+                + Inflation has experienced an unstable situation, reaching its peak in 2008 and a negative value in 2000.</br>
+                + The total GDP of Vietnam has consistently increased from 1996 (Total GDP: 24,657,470,575) to 2021 
+                (366,137,590,601), demonstrating remarkable economic growth. </br>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin: 15px !important;">
+          <div class="col-lg-4 order-2 order-lg-1 order-md-2 order-sm-2">
+            <div class="indicator-box">
+              <h1>Population, Unemployment with GDP</h1>
+              <p>
+                - After using linear regression, the variables that are correlated with GDP (current US$) are Population, Labor Force, Unemployment and Trade. </br>
+                - Population and labor force have a strong positive correlation with GDP. The regression results indicate that the R-Squared value for both of these variables is around 0.9, which means that this linear regression model explains about 90% of the variation in GDP. </br>
+                - Trade also has a positive correlation with GDP. This can be explained by the fact that when the trade-to-GDP ratio of a country increases, it indicates a higher level of international trade activities, expanding the market opportunities and earning more foreign currency with a higher conversion value, thereby contributing to GDP growth.</br>
+                - The unemployment rate within the labor force has a negative correlation with GDP.</br>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-8 order-1 order-lg-2 order-md-1 order-sm-1">
+            <div class="indicator-box">
+              <img id="regression" src="assets/dashboards/regression.png"></img>
+            </div>  
+          </div>
+        </div>
+
       </div>
 
     </section>
@@ -269,6 +309,9 @@
 
     <!-- Load dashboard -->
     <script src="js/load-dashboards.js"></script>
+
+    <!-- Load typing effect -->
+    <script src="js/typing-effect.js"></script>
   </body>
 </html>
 

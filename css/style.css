@@ -151,7 +151,6 @@ h1.heading.pink:after {
 .detail {
   background: url(../assets/images/vietnam.svg) #B2DDEF center center no-repeat fixed;
   background-size: auto 100vh;
-  color: #fff;
   padding: 3em;
 }
 .detail h1 {
@@ -161,8 +160,21 @@ h1.heading.pink:after {
   margin-top: 0;
   margin-bottom: 1em;
 }
+.detail div h1 {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: green; /* F7E7BD */
+}
 
-
+.detail div p {
+  max-height: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.02);
+  color: #222;
+}
 /* Footer */
 .footer {
   background-color: #37324b;
@@ -259,10 +271,10 @@ h1.heading.pink:after {
 
 
 /* detail elements */
-#diff-in-labor {
+#gdp-vietnam-overview {
   position: relative;
 }
-#diff-in-labor::after {
+#gdp-vietnam-overview::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -272,10 +284,10 @@ h1.heading.pink:after {
   bottom: 0em;
 }
 
-#line-gdp {
+#indexes {
   position: relative;
 }
-#line-gdp::after {
+#indexes::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -296,4 +308,21 @@ h1.heading.pink:after {
   background: white;
   display: block;
   bottom: 0em;
+}
+
+#labor-force {
+  position: relative;
+}
+#labor-force::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 27px;
+  background: white;
+  display: block;
+  bottom: 0em;
+}
+
+#regression {
+  width: 100%;
 }
