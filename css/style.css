@@ -326,3 +326,16 @@ h1.heading.pink:after {
 #regression {
   width: 100%;
 }
+
+#three-growthest-year {
+  position: relative;
+}
+#three-growthest-year::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 27px;
+  background: white;
+  display: block;
+  bottom: 0em;
+}
